@@ -42,7 +42,7 @@ class TestFNN(unittest.TestCase):
         self.m2.layers[2].w = np.array([[1, -2, 2, -2, 1],
                                         [-1, 1, 1, -1, -1]])
         self.m2.layers[2].b = np.array([[1, 0, -1, 1, 2]])
-        
+
     def test_forwardprop(self):
         # Test on the tiny subset of mnist.
         probs, loss = self.m1.forwardprop(toy_data, toy_labels)
@@ -58,9 +58,9 @@ class TestFNN(unittest.TestCase):
         self.assertTrue(np.allclose(self.m2.layers[1].a,
                                     np.array([[0, 17],
                                               [0, 26]])))
-        print '\n' + '=' * 50 + '\n'
-        print "Your forward propagation is correct!"
-        print '\n' + '=' * 50 + '\n'
+        print( '\n' + '=' * 50 + '\n' )
+        print( "Your forward propagation is correct!" )
+        print( '\n' + '=' * 50 + '\n' )
 
     def test_backprop(self):
         # Use gradient check to test on the tiny mnist
@@ -88,9 +88,9 @@ class TestFNN(unittest.TestCase):
 
         self.assertTrue(np.allclose(self.m2.layers[0].d_b,
                                     np.array([[-1, 0, 2]])))
-        print '\n' + '=' * 50 + '\n'
-        print "Your backpropagation is correct!"
-        print '\n' + '=' * 50 + '\n'
+        print( '\n' + '=' * 50 + '\n' )
+        print( "Your backpropagation is correct!" )
+        print( '\n' + '=' * 50 + '\n' )
 
 
 if __name__ == '__main__':

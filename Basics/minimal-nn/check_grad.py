@@ -30,7 +30,7 @@ def backprop_grad(params_vec, model, labels):
 
 def compute_fd_grad(f, params_vec, d):
     fd_grad = np.zeros_like(params_vec)
-    for i in xrange(params_vec.shape[0]):
+    for i in range(params_vec.shape[0]):
         d_v = np.zeros_like(params_vec)
         d_v[i] = d
         fd_grad[i] = (f(params_vec+d_v) - f(params_vec-d_v)) / (2*d)
