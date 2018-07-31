@@ -146,14 +146,20 @@ class Layer(object):
         #     weighted sum of inputs plus bias, a matrix of shape (N, H).
         #     N is the number of data points.
         #     H is the number of hidden units in this layer.
-        scores = np.zeros((inputs.shape[0], self.w.shape[1]))
+        scores = np.dot(inputs, self.w) + self.b
 
         # The non-linear transformation.
         # outputs:
         #     activations of this layer, a matrix of shape (N, H).
         #     N is the number of data points.
         #     H is the number of hidden units in this layer.
-        activations = np.zeros_like(scores)
+        activations = self.activate(scores)
+        # self._activations[0] = x
+        # for i in range(1, self.num_layers):
+        #     self._zs[i] = (
+        #         self.weights[i].dot(self._activations[i - 1]) + self.biases[i]
+        #     )
+        #     self._activations[i] = sigmoid(self._zs[i])
 
         # End of the code to modify
         #########################################################
