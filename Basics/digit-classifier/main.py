@@ -2,7 +2,7 @@ from collect import load_mnist
 from network import NeuralNetwork
 
 training_data, validation_data, test_data = load_mnist()
-net = NeuralNetwork([784, 80, 40, 16, 10])
+net = NeuralNetwork([784, 512, 10])
 net.fit(list(training_data), list(validation_data))
 
 # champions:
