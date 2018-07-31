@@ -1,0 +1,3 @@
+Works to find simple patterns like 123456789
+
+but it cannot produce readable english. Need something stronger to make character rnn work.
