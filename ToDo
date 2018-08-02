@@ -1,13 +1,9 @@
 1) Basic Deep Learning Examples without Library:
 
-https://eli.thegreenplace.net/2018/understanding-how-to-implement-a-character-based-rnn-language-model/
-https://eli.thegreenplace.net/2018/minimal-character-based-lstm-implementation/
-
-https://eli.thegreenplace.net/2018/elegant-python-code-for-a-markov-chain-text-generator/ - Very short markov generator
-
-https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative
-https://eli.thegreenplace.net/2018/backpropagation-through-a-fully-connected-layer/
+-- Understand minimal-run code
+-- Universal Approximation
+-- Derivation of backprop
 
 2) Set Up Workspace
 
-3) Actually code the examples in chapter 2 + 3
+3) Code the examples in chapter 3
