@@ -1,0 +1,13 @@
+ssh -i "TestingPair.pem" ubuntu@ec2-34-226-195-83.compute-1.amazonaws.com
+
+wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
+
+bash Anaconda3-5.3.0-Linux-x86_64.sh
+
+open new tab to use anaconda
+
+====
+
+jupyter notebook --no-browser --port=8888
+
+ssh -i "TestingPair.pem" ubuntu@ec2-34-226-195-83.compute-1.amazonaws.com -L 8888:localhost:8888
